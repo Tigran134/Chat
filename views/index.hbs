@@ -1,0 +1,41 @@
+<div class="messages">
+  <div class="messagesWrap">
+    {{#each allMessages}}
+    {{> message}}
+    {{else}}
+    <div class="wrapNo-message">
+      <p class="no-message">Сообщений нет...</p>
+    </div>
+    {{/each}}
+  </div>
+  <div class="login">
+    <span class="login__text">Войти с помощью:</span>
+    <a href="auth/vkontakte" class="login__link vk">
+      <img src="/img/vk.png" >
+    </a>
+    <a href="" class="login__link ok">
+      <img src="/img/ok.png" alt="#">
+    </a>
+  </div>
+  <div class="control">
+    <div class="message__avatar">
+      <img src="/img/avatar.png" alt="avatar" class="message__img">
+    </div>
+    <form action="#" id="sendMessage_chat">
+      <textarea id="sendMessage" name="message" class="form-control areaSendMessage"
+        placeholder="Введите сообщение..."></textarea>
+      <button type="submit">
+        <img src="/img/telegram.png" alt="#">
+      </button>
+    </form>
+    </textarea>
+
+  </div>
+</div>
+
+<template id='tpltAnswer'>
+  {{> answer}}
+</template>
+<template id='tpltMessage'>
+  {{> message}}
+</template>

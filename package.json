@@ -1,0 +1,35 @@
+{
+  "name": "elbrus",
+  "version": "1.0.0",
+  "description": "NodeJS chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "express"
+  ],
+  "author": "Yurii Chikhrai",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "bluebird": "^3.7.2",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.9",
+    "mongoose-findorcreate": "^3.0.0",
+    "nodemon": "^2.0.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-vkontakte": "^0.3.2",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  }
+}

@@ -1,0 +1,46 @@
+<main class="chat-message fadeIn" id="{{this.id}}">
+  <div class="message__messageWrap">
+    <div class="message__avatar">
+      <img src="/img/avatar.png" alt="avatar" class="message__img">
+    </div>
+    <div class="message">
+      <div class="message__content">
+        <div class="message__info">
+          <h5 class="message__name">{{this.username}}</h5>
+          <span class="message__time">{{this.date}}</span>
+        </div>
+        <div class="message__textWrap">
+          <p class="message__text">{{this.content}}</p>
+        </div>
+        <div class="message__linkWrap">
+          <div>
+            <a href="#" class="message__link">Ответить</a>
+            <div class="form-group d-none">
+              <input type="text" class="  form-control inputComment" aria-describedby="emailHelp"
+                placeholder="Напишите свой ответ" required>
+              <button type="button" class="btn btn-secondary btnComment">></button>
+            </div>
+          </div>
+          <div class="message__settings">
+            <div class="message__likeWrap">
+              <a href="#" class="message__like">
+                <img src="/img/like2.png" alt="like">
+              </a>
+              <span class="message__count">{{this.likes}}</span>
+            </div>
+            <div class="message__likeWrap">
+              <a href="#" class="message__like">
+                <img src="/img/like2.png" alt="dislike">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="message__answer">
+    {{#each messages}}
+    {{> answer}}
+    {{/each}}
+  </div>
+</main>
